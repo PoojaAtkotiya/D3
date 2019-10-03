@@ -1,0 +1,12 @@
+import os
+
+os.chdir(r"D:\Demo Projects\D3\01") 
+os.getcwd()
+
+python -m http.server
+----------------------------------------------------------------
+open command prompt 
+check python version by using, python --version
+go to file directory where d3 html resides
+run cmd, python -m http.server
+open link http://localhost:8000/ in browser
