@@ -1,4 +1,3 @@
-const fs = require('fs');
 var margin = { left: 100, right: 10, top: 10, botton: 100 };
 var width = 600 - margin.left - margin.right;
 var height = 400 - margin.top - margin.botton;
@@ -52,8 +51,6 @@ group.append("text")
 
 
 
-var data1 = fs.readFileSync('revenues.json');
-console.log(data1.toString());
 d3.json("data/revenues.json").then((data) => {
     //console.log(data);
 
@@ -86,7 +83,7 @@ function update(data) {
     yAxisGroup.transition(t).call(yAxisCall);
 
     //JOIN new data with old element
-    var rects = group.selectAll("rect")
+    var rects = group.selectAll("circle")
         .data(data, function (d) {
             return d.month;
         });

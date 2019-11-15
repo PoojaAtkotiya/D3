@@ -10,3 +10,6 @@ check python version by using, python --version
 go to file directory where d3 html resides
 run cmd, python -m http.server
 open link http://localhost:8000/ in browser
+
+---------------------------------------------
+if not running, use cmd, go to directory, and run python -m http.server
